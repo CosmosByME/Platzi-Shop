@@ -4,7 +4,7 @@ part 'token.g.dart';
 
 @freezed
 abstract class Token with _$Token {
-  const Token._();
+  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory Token({
     required String accessToken,
     required String refreshToken,

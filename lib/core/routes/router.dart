@@ -6,6 +6,7 @@ import 'package:myapp/presentation/pages/home_screen.dart';
 import 'package:myapp/presentation/pages/login_screen.dart';
 import 'package:myapp/presentation/pages/product_screen.dart';
 import 'package:myapp/core/routes/main_screen.dart';
+import 'package:myapp/presentation/pages/profile_screen.dart';
 import 'package:myapp/presentation/pages/sign_up_screen.dart';
 
 sealed class Routes {
@@ -159,7 +160,7 @@ sealed class AppRoute {
           ),
           GoRoute(
             path: Routes.profile,
-            builder: (context, state) => const Scaffold(),
+            builder: (context, state) => ProfileScreen(),
           ),
         ],
       ),

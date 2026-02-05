@@ -119,7 +119,7 @@ class _ProductScreenState extends State<ProductScreen> {
 
 
 class _AddToCart extends StatelessWidget {
-  const _AddToCart({super.key});
+  const _AddToCart();
 
   @override
   Widget build(BuildContext context) {
@@ -150,7 +150,7 @@ class _AddToCart extends StatelessWidget {
 }
 
 class _ProductQuantity extends StatelessWidget {
-  const _ProductQuantity({super.key});
+  const _ProductQuantity();
 
   @override
   Widget build(BuildContext context) {
@@ -193,7 +193,7 @@ class _ProductQuantity extends StatelessWidget {
 class _SimilarProduct extends StatelessWidget {
   final Product product;
 
-  const _SimilarProduct({required this.product, super.key});
+  const _SimilarProduct({required this.product});
 
   Future<List<Product>> _similarProducts(int categoryID, int productID) async {
     final data = await Network.request(api: Apis.productsByCategory('$categoryID'));

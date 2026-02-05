@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/core/components/search_button.dart';
-import 'package:myapp/core/icons/app_icons.dart';
 import 'package:myapp/core/l10n/app_strings.dart';
 import 'package:myapp/core/components/products_view.dart';
 import 'package:myapp/core/theme/app_colors.dart';

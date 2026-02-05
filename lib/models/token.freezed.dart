@@ -207,10 +207,10 @@ return $default(_that.accessToken,_that.refreshToken);case _:
 }
 
 /// @nodoc
-@JsonSerializable()
 
-class _Token extends Token {
-  const _Token({required this.accessToken, required this.refreshToken}): super._();
+@JsonSerializable(fieldRename: FieldRename.snake)
+class _Token implements Token {
+  const _Token({required this.accessToken, required this.refreshToken});
   factory _Token.fromJson(Map<String, dynamic> json) => _$TokenFromJson(json);
 
 @override final  String accessToken;
